@@ -193,10 +193,7 @@ export default {
       this.$store.commit("updateCallStatus", "calling");
       const userName = sponsor;
       this.inviterName = userName;
-      this.callTypeDisplayName =
-        callType === this.TrtcCalling.CALL_TYPE.AUDIO_CALL
-          ? "语音通话"
-          : "视频通话";
+      this.callTypeDisplayName = callType === this.TrtcCalling.CALL_TYPE.AUDIO_CALL ? "语音通话" : "视频通话";
       this.isShowNewInvitationDialog = true;
     },
     getNewInvitationDialogContent: function() {
