@@ -5,7 +5,7 @@
       <router-view class="view"></router-view>
     </transition>
     <el-dialog :title="callTypeDisplayName" :visible.sync="isShowNewInvitationDialog" width="400px">
-      <span>{{this.getNewInvitationDialogContent()}}</span>
+    <!--      <span>{{this.getNewInvitationDialogContent()}}</span> featA-1 -->
       <span slot="footer" class="dialog-footer">
         <el-button @click="handleRejectCall">拒绝</el-button>
         <el-button type="primary" @click="handleDebounce(handleAcceptCall, 500)">接听</el-button>
