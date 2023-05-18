@@ -7,7 +7,7 @@
     <el-dialog :title="callTypeDisplayName" :visible.sync="isShowNewInvitationDialog" width="400px">
     <!--      <span>{{this.getNewInvitationDialogContent()}}</span> featA-1 -->
       <span slot="footer" class="dialog-footer">
-        <el-button @click="handleRejectCall">拒绝</el-button>
+        <el-button @click="handleRejectCall">拒绝 featA-2</el-button>
         <el-button type="primary" @click="handleDebounce(handleAcceptCall, 500)">接听</el-button>
       </span>
     </el-dialog>
